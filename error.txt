@@ -1,0 +1,12 @@
+USER@192 express-playground % node app.js             
+/Users/USER/Documents/outlier/mandolin_parade_v2/express-playground/models/summarizeModel.js:2
+const { pipeline } = require('@xenova/transformers');
+                     ^
+
+Error [ERR_REQUIRE_ESM]: require() of ES Module /Users/USER/Documents/outlier/mandolin_parade_v2/express-playground/node_modules/@xenova/transformers/src/transformers.js from /Users/USER/Documents/outlier/mandolin_parade_v2/express-playground/models/summarizeModel.js not supported.
+Instead change the require of transformers.js in /Users/USER/Documents/outlier/mandolin_parade_v2/express-playground/models/summarizeModel.js to a dynamic import() which is available in all CommonJS modules.
+    at Object.<anonymous> (/Users/USER/Documents/outlier/mandolin_parade_v2/express-playground/models/summarizeModel.js:2:22) {
+  code: 'ERR_REQUIRE_ESM'
+}
+
+Node.js v20.12.2
