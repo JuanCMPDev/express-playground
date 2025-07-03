@@ -11,8 +11,12 @@ const summarize = async (req, res) => {
         // Summarize the article
         const summarizedText = await summarizeModel(articleText);
 
+        console.log(summarizedText);
+
+
         // Convert the summarized text to speech
         const audioBuffer = await tts(summarizedText);
+
 
         // Set metadata
         const metadata = {
